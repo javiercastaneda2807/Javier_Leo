@@ -9,30 +9,19 @@
 body{
     width: 100%;
     height: 100vh;
-    display: grid;
     place-items: center;
-    background-color: #3B304B;
-}
+    background: #e0e0e0;  /* fallback for old browsers */
 
+}
 
 main{
-    width: 100%;
+    width: auto;
     height: auto;
-    display: grid;
     place-items: center;
 }
 
-
-
-
-
-
-
-
-
-
 header{
-    background: linear-gradient(rgba(18, 48, 118, 0.8), rgba(18, 48, 118, 0.8)), url(http://static.laverdad.com/images/2017/octubre/31/130021b.jpg);
+    background: linear-gradient(rgba(25, 118, 210, 0.78), rgba(25, 118, 210, 0.78)), url(http://static.laverdad.com/images/2017/octubre/31/130021b.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -43,34 +32,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
     padding: 100px;
 }
 
 header h1{
     font-size: 35px;
     font-weight: bold;
-    text-shadow: 1px 1px 5px rgb(163, 163, 163), 1px 1px 8px rgb(163, 163, 163), 1px 1px 10px rgb(163, 163, 163), 1px 1px 15px rgb(163, 163, 163);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container{
     display: flex;
@@ -93,13 +61,10 @@ header h1{
 .square4,
 .square5,
 .square6{
-    background-color: #6476a6;
+    background-color: rgba(25, 118, 210, 0.78);
     position: relative;
     border-radius: 10px;
 }
-
-
-
 
 #content{
     position: absolute;
@@ -169,7 +134,6 @@ header h1{
     text-decoration: underline;
 }
 
-
 .square1:hover #background #text,
 .square2:hover #background #text,
 .square3:hover #background #text,
@@ -177,72 +141,52 @@ header h1{
 .square5:hover #background #text,
 .square6:hover #background #text{
     transform: scale(1);
+
 }
 
 .square1 #content{
-    background-color: #44B0FE;
+    background-color: rgb(25, 118, 210);
 }
 
 .square2 #content{
-    background-color: #FF7594;
+    background-color: rgb(25, 118, 210);
 }
 
 .square3 #content{
-    background-color: #1d8154;
+    background-color: rgb(25, 118, 210);
 }
 
 .square4 #content{
-    background-color: #FFB100;
+    background-color: rgb(25, 118, 210);
 }
 
 .square5 #content{
-    background-color: #2EAA83;
+    background-color: rgb(25, 118, 210);
 }
 
 .square6 #content{
-    background-color: #D86DFF;
+    background-color: rgb(25, 118, 210);
 }
-
-
-
 
 
 @media (max-width: 1400px) {
     .squares{
         width: 310px;
-        height: 310px;
+        height: 250px;
         margin-bottom: 20px;
         margin-right: 20px;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
-    background-color: #1976D2;
+    background-color:rgb(25, 118, 210);
     width: 100%;
     height: 100px;
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 footer h3, footer h4{
     padding: 15px;
@@ -250,4 +194,20 @@ footer h3, footer h4{
     color: white;
     font-size: 20px;
 
+}
+
+.navbar-expand-lg{
+    background-color: rgba(25, 118, 210, 0.78);
+    padding: 15px;
+    margin-bottom: 50px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+img{
+    position:right;
+    height: 100px;
+    margin-right: 100px;
+    padding-right: 10px;
+    
 }
